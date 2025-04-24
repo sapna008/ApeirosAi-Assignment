@@ -66,15 +66,15 @@ const OrderConfirmationPage = () => {
         </p>
       </div>
       
-      {/* Order Tracking */}
+  
       <div className="bg-white rounded-lg shadow-md p-6 mb-6">
         <h2 className="text-lg font-semibold mb-6">Track Your Order</h2>
         
         <div className="relative">
-          {/* Timeline line */}
+
           <div className="absolute left-4 top-0 h-full w-0.5 bg-gray-200"></div>
           
-          {/* Timeline steps */}
+
           <div className="space-y-8">
             <div className="relative pl-10">
               <div className="absolute left-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
@@ -118,8 +118,7 @@ const OrderConfirmationPage = () => {
           </div>
         </div>
       </div>
-      
-      {/* Order Summary */}
+
       <div className="bg-white rounded-lg shadow-md p-6 mb-6">
         <h2 className="text-lg font-semibold mb-4">Order Summary</h2>
         
