@@ -4,7 +4,7 @@
 
 ## 🌐 Live Demo
 
-🚧 Currently running on `localhost`.  Netlify
+🚧 Currently running on Netlify
 [Live Demo](https://companyassignmentt.netlify.app/)
 
 ## 📱 Features
