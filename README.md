@@ -1,6 +1,6 @@
 # 🛍️ SapnaStore
 
-**SapnaStore** is a simple and responsive e-commerce shopping website created using **React.js** and **Material UI**. It is optimized for mobile devices and provides a clean, interactive user experience for browsing and purchasing products.
+**SapnaStore** is a simple and responsive e-commerce shopping website created using **React.js** and **ParticleJS UI**. It is optimized for mobile devices and provides a clean, interactive user experience for browsing and purchasing products.
 
 ## 🌐 Live Demo
 
