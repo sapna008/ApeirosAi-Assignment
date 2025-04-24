@@ -1,13 +1,13 @@
-# 🛍️ SapnaStore
+# SapnaStore
 
 **SapnaStore** is a simple and responsive e-commerce shopping website created using **React.js** and **ParticleJS UI**. It is optimized for mobile devices and provides a clean, interactive user experience for browsing and purchasing products.
 
-## 🌐 Live Demo
+## Live Demo
 
-🚧 Currently running on Netlify
+Currently running on Netlify
 [Live Demo](https://companyassignmentt.netlify.app/)
 
-## 📱 Features
+## Features
 
 - Mobile-friendly shopping interface
 - Product listings with images and details
@@ -15,15 +15,16 @@
 - Order button
 - Interactive UI using ParticleJs components
 - Fully built using React.js
+- Firebase for storing order information 
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Frontend Framework:** React.js  
 - **UI Library:** ParticleJs 
 - **Styling:**  Tailwind CSS 
 - **Deployment:** *(deployed on Netlify)*
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this project locally:
 
