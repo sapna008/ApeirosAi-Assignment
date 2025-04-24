@@ -11,8 +11,8 @@
 
 - Mobile-friendly shopping interface
 - Product listings with images and details
-- Add to Cart functionality *(if implemented)*
-- Order button *(if implemented)*
+- Add to Cart functionality 
+- Order button
 - Interactive UI using ParticleJs components
 - Fully built using React.js
 
