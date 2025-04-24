@@ -32,7 +32,7 @@ To run this project locally:
 git clone https://github.com/your-username/sapna-store.git
 
 # Navigate into the project directory
-cd sapna-store
+cd ApeirosAi-Assignment
 
 # Install dependencies
 npm install
