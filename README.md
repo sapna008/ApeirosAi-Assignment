@@ -4,8 +4,8 @@
 
 ## 🌐 Live Demo
 
-🚧 Currently running on `localhost`.  
-[Netlify](https://companyassignmentt.netlify.app/)
+🚧 Currently running on `localhost`.  Netlify
+[Live Demo](https://companyassignmentt.netlify.app/)
 
 ## 📱 Features
 
