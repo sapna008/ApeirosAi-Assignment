@@ -5,7 +5,7 @@
 ## 🌐 Live Demo
 
 🚧 Currently running on `localhost`.  
-To deploy your project online, consider using platforms like [Vercel](https://vercel.com), [Netlify](https://www.netlify.com), or [Firebase Hosting](https://firebase.google.com/products/hosting).
+[Netlify](https://companyassignmentt.netlify.app/)
 
 ## 📱 Features
 
