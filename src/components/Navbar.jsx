@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="mx-auto">
         <div className="flex justify-between items-center h-14 px-4">
           <Link to="/" className="flex items-center">
-            <span className="text-xl font-bold text-teal-600 dark:text-teal-400">ShopEase</span>
+            <span className="text-xl font-bold text-teal-600 dark:text-teal-400">SapnaStore</span>
           </Link>
           
           <div className="flex items-center space-x-4">
