@@ -50,10 +50,10 @@ const ParticlesComponent = ({ id }) => {
       },
       particles: {
         color: {
-          value: theme === 'light' ? "#2D3748" : "#FFFFFF",
+          value: theme === 'light' ? "#FFFFFF" : "#FFFFFF",
         },
         links: {
-          color: theme === 'light' ? "#2D3748" : "#FFFFFF",
+          color: theme === 'light' ? "#FFFFFF" : "#FFFFFF",
           distance: 150,
           enable: true,
           opacity: 0.3,

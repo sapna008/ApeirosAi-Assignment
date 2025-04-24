@@ -45,12 +45,12 @@ const ProductDetailsPage = () => {
 
   if (isLoading) {
     return (
-      <div className="animate-pulse">
+      <div className="container mx-auto px-4 py-6 animate-pulse">
         <div className="h-6 bg-gray-200 rounded w-1/4 mb-4"></div>
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-1/2 bg-gray-200 rounded-lg h-80"></div>
-          <div className="w-full md:w-1/2 space-y-4">
-            <div className="h-8 bg-gray-200 rounded w-3/4"></div>
+        <div className="flex flex-col gap-6">
+          <div className="w-full bg-gray-200 rounded-lg h-64"></div>
+          <div className="w-full space-y-3">
+            <div className="h-6 bg-gray-200 rounded w-3/4"></div>
             <div className="h-4 bg-gray-200 rounded w-1/4"></div>
             <div className="h-4 bg-gray-200 rounded w-full"></div>
             <div className="h-4 bg-gray-200 rounded w-full"></div>
@@ -64,7 +64,7 @@ const ProductDetailsPage = () => {
 
   if (error) {
     return (
-      <div className="text-center py-10">
+      <div className="container mx-auto px-4 py-10 text-center">
         <p className="text-red-500 mb-4">Error loading product</p>
         <p className="text-gray-600">{error}</p>
         <button 
@@ -80,30 +80,30 @@ const ProductDetailsPage = () => {
   if (!product) return null;
 
   return (
-    <div>
+    <div className="container mx-auto px-4 py-4">
       <button 
         onClick={() => navigate(-1)} 
-        className="mb-4 flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+        className="mb-4 flex items-center text-gray-600 hover:text-teal-500 transition-colors"
       >
         <ArrowLeft className="h-4 w-4 mr-1" />
         Back
       </button>
       
-      <div className="flex flex-col md:flex-row gap-8">
-        {/* Product Image */}
-        <div className="w-full md:w-1/2 bg-white rounded-lg p-8 flex items-center justify-center">
+      <div className="flex flex-col gap-6">
+
+        <div className="w-full bg-white rounded-lg p-4 flex items-center justify-center">
           <img 
             src={product.image} 
             alt={product.title} 
-            className="max-h-80 object-contain mx-auto"
+            className="max-h-60 object-contain mx-auto"
           />
         </div>
         
-        {/* Product Details */}
-        <div className="w-full md:w-1/2">
-          <h1 className="text-2xl font-bold text-gray-800 mb-2">{product.title}</h1>
+
+        <div className="w-full">
+          <h1 className="text-xl font-bold text-gray-800 mb-2">{product.title}</h1>
           
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-3">
             <div className="flex items-center mr-2">
               {[...Array(5)].map((_, i) => (
                 <Star 
@@ -119,28 +119,28 @@ const ProductDetailsPage = () => {
             </span>
           </div>
           
-          <div className="text-2xl font-bold text-blue-600 mb-4">
+          <div className="text-xl font-bold text-teal-500 mb-3">
             ${product.price.toFixed(2)}
           </div>
           
-          <p className="text-gray-600 mb-6">{product.description}</p>
+          <p className="text-gray-600 text-sm mb-4">{product.description}</p>
           
-          <div className="flex items-center text-green-600 mb-4">
-            <Truck className="h-5 w-5 mr-2" />
+          <div className="flex items-center text-green-600 mb-4 text-sm">
+            <Truck className="h-4 w-4 mr-2" />
             <span>Free delivery available</span>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="grid grid-cols-2 gap-3">
             <button 
               onClick={handleAddToCart}
-              className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 transition-colors flex-1 flex items-center justify-center"
+              className="px-3 py-2 border-2 border-teal-500 text-teal-500 rounded-md hover:bg-blue-50 transition-colors flex items-center justify-center text-sm"
             >
-              <ShoppingCart className="h-5 w-5 mr-2" />
+              <ShoppingCart className="h-4 w-4 mr-1" />
               Add to Cart
             </button>
             <button 
               onClick={handleBuyNow}
-              className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors flex-1"
+              className="px-3 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-colors text-sm"
             >
               Buy Now
             </button>

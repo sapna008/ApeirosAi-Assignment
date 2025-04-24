@@ -11,15 +11,15 @@ const CartPage = () => {
   
   if (cart.items.length === 0) {
     return (
-      <div className="text-center py-12">
-        <div className="inline-flex justify-center items-center w-24 h-24 bg-gray-100 rounded-full mb-6">
-          <ShoppingCart className="h-12 w-12 text-gray-400" />
+      <div className="container mx-auto px-4 text-center py-10">
+        <div className="inline-flex justify-center items-center w-20 h-20 bg-gray-100 rounded-full mb-4">
+          <ShoppingCart className="h-10 w-10 text-gray-400" />
         </div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Your cart is empty</h2>
-        <p className="text-gray-600 mb-6">Looks like you haven't added any products to your cart yet.</p>
+        <h2 className="text-xl font-semibold text-gray-800 mb-3">Your cart is empty</h2>
+        <p className="text-gray-600 mb-5 text-sm">Looks like you haven't added any products to your cart yet.</p>
         <Link 
           to="/"
-          className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors inline-block"
+          className="px-5 py-3 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-colors inline-block"
         >
           Start Shopping
         </Link>
@@ -28,12 +28,12 @@ const CartPage = () => {
   }
   
   return (
-    <div>
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Your Shopping Cart</h1>
+    <div className="container mx-auto px-4 py-4">
+      <h1 className="text-xl font-bold text-gray-800 mb-4">Your Shopping Cart</h1>
       
-      <div className="flex flex-col lg:flex-row gap-6">
+      <div className="flex flex-col gap-5">
         {/* Cart Items */}
-        <div className="lg:w-2/3 bg-white rounded-lg shadow-md p-6">
+        <div className="w-full bg-white rounded-lg shadow-md p-4">
           <div className="hidden md:flex text-sm text-gray-500 border-b pb-3">
             <div className="w-1/2">Product</div>
             <div className="w-1/4 text-center">Quantity</div>
@@ -46,25 +46,24 @@ const CartPage = () => {
             ))}
           </div>
           
-          <div className="mt-6 flex justify-between items-center">
-            <Link to="/" className="text-blue-600 hover:text-blue-800 transition-colors">
+          <div className="mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+            <Link to="/" className="text-teal-500 hover:text-teal-700 transition-colors text-sm">
               ← Continue Shopping
             </Link>
             
-            <div className="flex items-center text-sm text-gray-500">
-              <AlertCircle className="h-4 w-4 mr-1" />
+            <div className="flex items-center text-xs text-gray-500">
+              <AlertCircle className="h-3 w-3 mr-1 flex-shrink-0" />
               <span>Prices and availability are subject to change</span>
             </div>
           </div>
         </div>
-        
-        {/* Order Summary */}
-        <div className="lg:w-1/3 space-y-4">
+
+        <div className="w-full space-y-4 sticky bottom-0 md:static">
           <CartSummary />
           
           <button
             onClick={() => navigate('/checkout')}
-            className="w-full px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-center"
+            className="w-full px-5 py-3 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-colors text-center"
           >
             Proceed to Checkout
           </button>
