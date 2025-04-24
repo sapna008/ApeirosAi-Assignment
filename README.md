@@ -9,19 +9,19 @@
 
 ## 📱 Features
 
-- 🛒 Mobile-friendly shopping interface
-- 📦 Product listings with images and details
-- ➕ Add to Cart functionality *(if implemented)*
-- ✅ Order button *(if implemented)*
-- 🔄 Interactive UI using Material UI components
-- ⚛️ Fully built using React.js
+- Mobile-friendly shopping interface
+- Product listings with images and details
+- Add to Cart functionality *(if implemented)*
+- Order button *(if implemented)*
+- Interactive UI using ParticleJs components
+- Fully built using React.js
 
 ## 🧰 Tech Stack
 
 - **Frontend Framework:** React.js  
-- **UI Library:** Material UI  
-- **Styling:** Material UI theming  
-- **Deployment:** *(To be deployed)*
+- **UI Library:** ParticleJs 
+- **Styling:**  Tailwind CSS 
+- **Deployment:** *(deployed on Netlify)*
 
 ## 🚀 Getting Started
 
